@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Quantitative-techniques/static/css/main.9765d4ef.css",
+    "main.js": "/Quantitative-techniques/static/js/main.25e92772.js",
+    "static/js/787.9ce505f5.chunk.js": "/Quantitative-techniques/static/js/787.9ce505f5.chunk.js",
+    "index.html": "/Quantitative-techniques/index.html",
+    "main.9765d4ef.css.map": "/Quantitative-techniques/static/css/main.9765d4ef.css.map",
+    "main.25e92772.js.map": "/Quantitative-techniques/static/js/main.25e92772.js.map",
+    "787.9ce505f5.chunk.js.map": "/Quantitative-techniques/static/js/787.9ce505f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9765d4ef.css",
+    "static/js/main.25e92772.js"
+  ]
+}
