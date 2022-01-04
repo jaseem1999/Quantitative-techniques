@@ -1,0 +1,32 @@
+.heding-cor {
+    margin-top: 90px;
+    margin-left: 20px;
+}
+.correlation{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+table, th, td {
+  border:1px solid black;
+
+}
+.correlation-t {
+    float: right;
+    width: 43%;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.correlation-t-x {
+    width: 100px;
+    text-align: center;
+}
+.correlation-t-y {
+    width: 100px;
+    text-align: center;
+}
+
