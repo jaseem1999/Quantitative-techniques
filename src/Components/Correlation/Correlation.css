@@ -18,7 +18,7 @@ table, th, td {
     width: 43%;
     margin-top: 6px;
     padding: 20px;
-    background-color: aquamarine;
+    background-color: rgb(101, 114, 110);
 }
 
 .correlation-t-x {
@@ -29,4 +29,12 @@ table, th, td {
     width: 100px;
     text-align: center;
 }
-
+.correlationAns span {
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(125, 180, 164);
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 5px;
+}

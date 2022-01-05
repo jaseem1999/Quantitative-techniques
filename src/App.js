@@ -1,7 +1,7 @@
 
 import './App.css';
-import Correlation from './Componends/Correlation/Correlation';
-import Nav from './Componends/NavBar/Nav.jsx';
+import Correlation from './Components/Correlation/Correlation';
+import Nav from './Components/NavBar/Nav.jsx';
 
 function App() {
   ///Correlation
