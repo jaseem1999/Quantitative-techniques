@@ -2,6 +2,16 @@
     margin-top: 90px;
     margin-left: 20px;
 }
+.github {
+    float : right;
+    margin-top: -50px;
+    margin-right: 20px;
+    
+}
+.algit {
+    width: 40px;
+    height: 40px;
+}
 .correlation{
     float: left;
     width: 50%;
@@ -79,11 +89,17 @@ table, th, td {
     margin : 10px;
     height : 30px;
 }
-.input button {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin : 10px;
-    height : 30px;
+.add {
+       background-color: rgb(125, 180, 164);
+    /* margin: 10px; */
+    width: 16px;
+    height: 18px;
+
+}
+.add:hover {
+    background-color: #00ff00;
+    width: 25px;
+    height: 25px;
 }
 .input button:hover, .correlationButton button:hover {
     background-color: rgb(125, 180, 164);

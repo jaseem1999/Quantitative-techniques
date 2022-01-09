@@ -4,6 +4,11 @@ import './Correlation.css'
 import Pr from './Practice/Pr'
 import  {correlationText,correlationEquation}  from './text/Text.jsx'
 import {useState,useEffect} from 'react'
+import { AiFillGithub } from 'react-icons/ai';
+import { FaPlus } from 'react-icons/fa';
+
+
+
 
 
 function Correlation() {
@@ -54,8 +59,9 @@ function Correlation() {
     return (
         <div>
             
-            <h1 className="heding-cor">Correlation</h1>
-            
+            <h1 className="">Correlation   </h1>
+            <h2 className="github">Github</h2><a href="https://github.com/jaseem1999/Quantitative-techniques" className="github" ><AiFillGithub className="algit"/></a>
+           
                 <div className="correlation">
                     <p> 
                         {correlationText}
@@ -117,9 +123,9 @@ function Correlation() {
 
                     <div className="input">
                         <input value={toDo} onChange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add X values" />
-                        <button onClick={()=>setToDos([...toDos,toDo,])} className="fas fa-plus">ADD</button> <br />
+                        <FaPlus onClick={()=>setToDos([...toDos,toDo,])} className='add' /><br/>
                         <input value={toDoY} onChange={(e)=>setToDoY(e.target.value)} type="text" placeholder="🖊️ Add Y values" />
-                        <button onClick={()=>setToDosY([...toDosY,toDoY,])} className="fas fa-plus">ADD</button> <br />
+                        <FaPlus onClick={()=>setToDosY([...toDosY,toDoY,])} className="add"/> <br />
                     </div>
                     <br />
                     <br />
@@ -167,8 +173,10 @@ function Correlation() {
                               
                               <button onClick={()=>setToDos([])} className="fas fa-trash-alt">Delete X</button>
                                 <button onClick={()=>setToDosY([])} className="fas fa-trash-alt">Delete Y</button>
+                              
+                                
                       
-                       
+                    
                     </div>
                     
                         
