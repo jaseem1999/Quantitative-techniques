@@ -9,6 +9,14 @@
     padding: 20px;
     background-color: aquamarine;
 }
+@media screen and (max-width: 876px) {
+    .correlation{
+        width: 90%;
+        float: none;
+    }
+}
+    
+
 table, th, td {
   border:1px solid black;
 
@@ -17,8 +25,14 @@ table, th, td {
     float: right;
     width: 43%;
     margin-top: 6px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(101, 114, 110);
+}
+@media screen and (max-width: 876px) {
+    .correlation-t{
+        float: none;
+        width: 90%;
+    }
 }
 
 .correlation-t-x {
@@ -30,6 +44,9 @@ table, th, td {
     text-align: center;
 }
 .correlationAns span {
+    position: relative;
+    top: 20px;
+    padding: 10px;
     width: 200px;
     height: 25px;
     text-align: center;
@@ -37,4 +54,38 @@ table, th, td {
     border: 1px solid black;
     margin-left: 20px;
     border-radius: 5px;
+}
+.table1 {
+    float: left;
+    width: 20%;
+    position: relative;
+    top : -100px;
+}
+.table2 {
+    float: left;
+    width: 20%;
+    position: relative;
+    top : -100px;
+}
+.correlationButton button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin : 10px;
+    height : 30px;
+}
+.input input {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin : 10px;
+    height : 30px;
+}
+.input button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin : 10px;
+    height : 30px;
+}
+.input button:hover, .correlationButton button:hover {
+    background-color: rgb(125, 180, 164);
+    cursor: pointer;
 }
