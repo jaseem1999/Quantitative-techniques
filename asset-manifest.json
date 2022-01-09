@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Quantitative-techniques/static/css/main.ce489ee5.css",
-    "main.js": "/Quantitative-techniques/static/js/main.7f58b3d9.js",
+    "main.css": "/Quantitative-techniques/static/css/main.fd0a3693.css",
+    "main.js": "/Quantitative-techniques/static/js/main.47ca5b61.js",
     "static/js/787.9ce505f5.chunk.js": "/Quantitative-techniques/static/js/787.9ce505f5.chunk.js",
     "static/media/Logo2.png": "/Quantitative-techniques/static/media/Logo2.2c4a8195ae0b6ef4b2f0.png",
     "static/media/Logo.png": "/Quantitative-techniques/static/media/Logo.472d0e3e8510dc17ac46.png",
     "index.html": "/Quantitative-techniques/index.html",
-    "main.ce489ee5.css.map": "/Quantitative-techniques/static/css/main.ce489ee5.css.map",
-    "main.7f58b3d9.js.map": "/Quantitative-techniques/static/js/main.7f58b3d9.js.map",
+    "main.fd0a3693.css.map": "/Quantitative-techniques/static/css/main.fd0a3693.css.map",
+    "main.47ca5b61.js.map": "/Quantitative-techniques/static/js/main.47ca5b61.js.map",
     "787.9ce505f5.chunk.js.map": "/Quantitative-techniques/static/js/787.9ce505f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce489ee5.css",
-    "static/js/main.7f58b3d9.js"
+    "static/css/main.fd0a3693.css",
+    "static/js/main.47ca5b61.js"
   ]
 }
