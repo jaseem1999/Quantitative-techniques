@@ -5,7 +5,8 @@ import Pr from './Practice/Pr'
 import  {correlationText,correlationEquation}  from './text/Text.jsx'
 import {useState,useEffect} from 'react'
 import { AiFillGithub } from 'react-icons/ai';
-import { FaPlus } from 'react-icons/fa';
+import { FaPlus,FaBusinessTime }  from 'react-icons/fa';
+
 
 
 
@@ -13,7 +14,7 @@ import { FaPlus } from 'react-icons/fa';
 
 function Correlation() {
 
-    let variables =[{x : 24 , y : 22},{x : 26 , y : 22},{x : 28 , y : 23},{x : 32 , y : 26},{x : 38 , y : 34},{x : 40 , y : 36},{x : 40 , y : 35},{x : 42 , y : 38},{x : 44 , y : 40},{x : 46 , y : 40}] 
+    let variables =[{x : 22 , y : 24},{x : 26 , y : 22},{x : 28 , y : 23},{x : 32 , y : 26},{x : 38 , y : 34},{x : 40 , y : 36},{x : 40 , y : 35},{x : 42 , y : 38},{x : 44 , y : 40},{x : 46 , y : 40}] 
 
     /// calculation of arithemetic mean r = Σ(𝑥−𝑥)(𝑦−𝑦)√Σ(𝑥−𝑥)2 Σ(𝑦−𝑦)2
     let x_mean = variables.reduce((acc, curr) => acc + curr.x, 0) / variables.length
@@ -60,12 +61,11 @@ function Correlation() {
         <div>
             
             <h1 className="">Correlation   </h1>
-            <h2 className="github">Github</h2><a href="https://github.com/jaseem1999/Quantitative-techniques" className="github" ><AiFillGithub className="algit"/></a>
+           <a href="https://github.com/jaseem1999/Quantitative-techniques" className="github" ><AiFillGithub className="algit"/></a>
            
                 <div className="correlation">
                     <p> 
-                        {correlationText}
-                       
+                        <FaBusinessTime/>{correlationText}
                         <br />
                         <br />
                         <b>{correlationEquation}</b>
@@ -85,10 +85,7 @@ function Correlation() {
                     </p>
                 </div>
                 <div className="correlation-t">
-                           
-                    
-
-                    <p>
+                     <p>
                       From the following data related to the ages of 10 couples, state whether there is any correlation between ages of husband and wife.<br/>
                         X variables is defined as husband<br/>
                         Y variables is defined as wife<br/>
@@ -117,10 +114,7 @@ function Correlation() {
                     <div className="correlationAns">
                         <p>Correlation is :<br/> <span> {r}</span></p><br/>
                         <p>Correlation is :<br/> <span> {result}</span></p><br/>
-                       
                     </div>
-                    
-
                     <div className="input">
                         <input value={toDo} onChange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add X values" />
                         <FaPlus onClick={()=>setToDos([...toDos,toDo,])} className='add' /><br/>
@@ -136,53 +130,37 @@ function Correlation() {
                     <table className="table1">
                         <tr>
                             <th>X variables</th>
-                            </tr>
-                            
-                            
-                        
+                        </tr>
                         {toDos.map((obj,index)=>{
-                              return (
-
-                        <tr>
-
-                            <td className="correlation-t-x" key={index}>{obj}</td> 
-                           
-                            </tr> 
-                        
-                       
+                            return (
+                                <tr>
+                                    <td className="correlation-t-x" key={index}>{obj}</td> 
+                                </tr> 
                             )     
                         })
                         }
 
-                         </table> 
-                         <table className="table2">
+                    </table> 
+
+                        <table className="table2">
                         <tr>
                             <th>Y variables</th>
                         </tr>
-                         {toDosY.map ((obj1,index1)=>{
+                        {toDosY.map ((obj1,index1)=>{
                                 return (
                                     <tr>
-                                    <td className="correlation-t-y" key={index1}>{obj1}</td>
+                                        <td className="correlation-t-y" key={index1}>{obj1}</td>
                                     </tr>
                                 )
                             })
                         }
                     
                         </table>
-                          <div className="correlationButton">
+                        <div className="correlationButton">
                               
-                              <button onClick={()=>setToDos([])} className="fas fa-trash-alt">Delete X</button>
-                                <button onClick={()=>setToDosY([])} className="fas fa-trash-alt">Delete Y</button>
-                              
-                                
-                      
-                    
-                    </div>
-                    
-                        
-                          
-                   
-                    
+                            <button onClick={()=>setToDos([])} className="fas fa-trash-alt">Delete X</button>
+                            <button onClick={()=>setToDosY([])} className="fas fa-trash-alt">Delete Y</button>
+                        </div>
                     <Pr/>
 
                 </div>   
